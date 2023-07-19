@@ -1,0 +1,206 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===== MAIN =====*/
+.main{
+    width: 100%;
+    background-color: rgb(253, 187, 74);
+    height: 18vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main-2{
+    width: 100%;
+    background-color: rgb(253, 187, 74);
+    height: 120vh;
+    background-image: url(background8.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+/*===== NAVBAR ====*/
+.navbar{
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+}
+.navbar img{
+    width: 100px;
+    padding: 5px;
+    float: left;
+}
+
+.logo{
+    color: beige;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    padding: 40px;
+    cursor: pointer;
+}
+/*==== MENU ====*/
+.menu{
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float:left;
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 19%;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 21px;
+    border: 3px solid#fff;
+    padding: 3px 15px;
+    border-radius: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: beige;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+}
+ul li:hover{
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+/*=========== F O R M ===========*/
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 45px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2.5px solid #030303;
+    color: #060606;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #080808;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #060606;
+    outline: none;
+    background: transparent;
+    border: 2.5px solid #070707;
+    width: 50%;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    float: right;
+    margin-right: 23%;
+}
+button:hover{
+    background-color: rgb(3, 3, 3);
+    color: #fff;
+}
+/*========== H 2 =========*/
+.main-2 h2{
+    position: absolute;
+    float: left;
+    margin-bottom: 48%;
+    font-family: monospace;
+    font-size: 30px;
+}
+/*========== H R ==========*/
+hr{
+    border-color: black;
+    box-shadow: black;
+    border: 8px solid black;
+}
+/*======== F O O T E R =========*/
+#footer{
+    background-color: rgb(248, 248, 241);
+    height: 340px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo1.png">
+            <h2 class="logo"> Tails n' Woofs</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Tails n' Woofs 1.html">HOME</a></li>
+                <li><a href="About Page.html">ABOUT</a></li>
+                <li><a href="Dogs Page.html ">DOGS</a></li>
+                <li><a href="">INQUIRY</a></li> 
+            </ul>
+        </div>
+    </div>
+    <hr>
+        <div class="main-2">
+            <h2>Inquiries</h2>
+                    <form>
+                        <p>Your Name:</p>
+                        <div class="input-group">
+                         <input type="text" required id="name" requried>
+                         <label for="name"></label>
+                        </div>
+                        <p>Your Address:</p>
+                        <div class="input-group">
+                         <input type="text" required id="address" requried>
+                         <label for="address"></label>
+                        </div>
+                        <p>Phone No.:</p>
+                        <div class="input-group">
+                            <input type="text" required id="number" requried>
+                            <label for="number"></label>
+                        </div>
+                        <p>Your Email:</p>
+                        <div class="input-group">
+                            <input type="email" required id="email" requried>
+                            <label for="email"></label>
+                        </div>
+                         <p>Your Message:</p>
+                        <div class="input-group">
+                            <textarea id="message"  rows="6" required></textarea>
+                            <label for="message"></label>
+                            <p>Note: Please input here the dog breed, key number of the puppy and its name for the complete details.</p>
+                           </div>
+                           <button type="submit">SUBMIT</button>
+                    </form>
+        </div>
+        <hr>
+        <div id="footer">
+        <center><img src="bg.jpg"></center>
+        </div>
+</body>
+</html>

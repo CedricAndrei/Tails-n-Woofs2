@@ -1,0 +1,231 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo1.png">
+    <title>Tails n' Woofs Inquiry</title>
+    <link rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <script src="Inquiries-JS.js"></script> 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("hpnTQozRVTUbtqT7J");
+      })();
+    </script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===== MAIN =====*/
+.main{
+    width: 100%;
+    background-image: url(background-1-2.png);
+    background-size: cover;
+    height: 18vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    display: flex;
+}
+.main-2{
+    width: 100%;
+    background-image: url(background8-1.png);
+    background-size: cover;
+    height: 109vh; 
+    box-sizing: border-box;
+}
+/*===== NAVBAR ====*/
+.navbar{
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+    display: flex;
+}
+.navbar img{
+    width: 120px;
+    padding: 0.5px;
+    float: left;
+    margin-bottom: 3px;
+}
+
+.logo{
+    color: beige;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    padding: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+/*==== MENU ====*/
+.menu{
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float:left;
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 45%;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 21px;
+    border: 3px solid#fff;
+    padding: 3px 15px;
+    border-radius: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: beige;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+}
+ul li:hover{
+    color: #fff;
+    background-color: black;
+}
+/*======= H R =======*/
+hr{
+    border-color: black;
+    box-shadow: black;
+    border: 8px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+/*=========== Box =========*/
+#box{
+    width: 50%;
+    height: 100vh;
+    border-radius: 10px;
+    border: 5px solid white;
+    margin-left: 24%;
+    background-color: white;
+    box-shadow: 7px 12px 10px black;
+    box-sizing: border-box;
+    display: flex;
+}
+#box h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+/*==== form ====*/
+.form{
+    width: 90%;
+    max-width: 600px;
+    margin-left: 70px;
+}
+.form h5{
+    font-family: sans-serif;
+}
+.form-group{
+    margin-bottom: 45px;
+    position: relative;
+}
+.form-group input, textarea{
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: 2.5px solid #030303;
+    color: #060606;
+    background: transparent;
+    font-size: 15px;
+}
+
+button{
+    padding: 8px 0;
+    color: #ffffff;
+    outline: none;
+    background: rgb(54, 54, 248);
+    width: 50%;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-left: 25%;
+    border: none;
+}
+button:hover{
+    color: #040404;
+}
+/*===== footer ======*/
+#footer{
+    background-color: rgb(248, 248, 241);
+    height: 340px;
+    display: flex;
+}
+#footer img{
+    position: absolute;
+    left: 15%;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo1.png">
+            <h2 class="logo"> Tails n' Woofs</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Page.html">ABOUT</a></li>
+                <li><a href="Dogs Page.html ">DOGS</a></li>
+                <li><a href="">INQUIRY</a></li> 
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="main-2">
+        <br>
+        <br>
+        <div id="box">
+
+            <div class="container">
+                <div class="row">
+                  <div class="form">
+                    <h1>Inquiries</h1>
+                    <br>
+                    <div class="form-group">
+                      <h5 for="name">Name</h5>
+                      <input type="text" class="form-control" id="name" placeholder="Enter name"/>
+                    </div>
+                    <div class="form-group">
+                        <h5 for="name">Address</h5>
+                        <input type="text" class="form-control" id="address" placeholder="Enter Address"/>
+                      </div>
+                    <div class="form-group">
+                        <h5 for="name">Phone No.</h5>
+                        <input type="text" class="form-control" id="number" placeholder="Enter Phone No."/>
+                      </div>
+                    <div class="form-group">
+                      <h5 for="email">Email</h5>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email"/>
+                    </div>
+                    <div class="form-group">
+                      <h5 for="message">Message</h5>
+                      <textarea class="form-control" id="message" rows="6"></textarea>
+                      <p>Note:Please input here the dog breed, key number of the dog, and its name.Always remember to double check the information that you are going to send.Thank you&#x1F60A;.</p>
+                    </div>
+                    <button type="submit" onclick="sendMail()">Submit</button>
+                  </div>
+                </div>
+              </div>
+        </form>
+    </div>
+    </div>
+    <hr>
+    <div id="footer">
+        <center><img src="bg.jpg"></center>
+        </div>
+</body>
+</html>

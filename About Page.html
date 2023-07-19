@@ -1,0 +1,210 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo1.png">
+    <title>Tails n' Woofs About</title>
+    <style>
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===== MAIN =====*/
+.main{
+    width: 100%;
+    background-image: url(background-1-2.png);
+    background-size: cover;
+    height: 18vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    display: flex;
+}
+.main-2{
+    width: 100%;
+    background-color: rgb(253, 187, 74);
+    height: 100vh; 
+    box-sizing: border-box;
+}
+.main-3{
+    width: 100%;
+    background-color: rgb(253, 187, 74);
+    height: 110vh;
+    box-sizing: border-box;
+}
+/*===== NAVBAR ====*/
+.navbar{
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+    display: flex;
+}
+.navbar img{
+    width: 120px;
+    padding: 0.5px;
+    float: left;
+    margin-bottom: 3px;
+}
+
+.logo{
+    color: beige;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    padding: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+/*==== MENU ====*/
+.menu{
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float:left;
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 45%;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 21px;
+    border: 3px solid#fff;
+    padding: 3px 15px;
+    border-radius: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: beige;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+}
+ul li:hover{
+    color: #fff;
+    background-color: black;
+}
+/*====== MAIN 2 IMG/TXT======*/
+#box-1{
+    height: 90vh;
+    width: 95%;
+    background-image: url(background2-1.png);
+    background-size: cover;
+    border-color: rgb(254, 252, 252);
+    border: 4px solid rgb(254, 250, 250);
+    border-radius: 10px;
+    margin-left: 2.5%;
+    box-sizing: border-box;
+}
+#box-1 img{
+    margin-top: 65px;
+    margin-left: 30px;
+
+}
+#box-1 h1{
+    float: right;
+    margin-right: 545px;
+    margin-top: 80px;
+    font-family: sans-serif;
+    font-size: 75px;
+}
+.text{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-left: 135px;
+    transform: translate(-50%,-50%);
+}
+.text p{
+    cursor: pointer;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+/*======== MAIN3 IMG =======*/
+#box-2{
+    height: 95vh;
+    width: 95%;
+    background-image: url(background7-1.png);
+    background-size: cover;
+    border-color: rgb(254, 252, 252);
+    border: 4px solid rgb(254, 250, 250);
+    border-radius: 10px;
+    margin-left: 2.5%;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+#box-2 img{
+    margin-left: 250px;
+}
+/*========== H R ==========*/
+hr{
+    border-color: black;
+    box-shadow: black;
+    border: 8px solid black;
+    display: flex;
+}
+/*======= FOOTER ======*/
+#footer{
+    background-color: rgb(248, 248, 241);
+    height: 340px;
+    display: flex;
+}
+#footer img{
+    position: absolute;
+    left: 15%;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo1.png">
+            <h2 class="logo"> Tails n' Woofs</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Page.html">ABOUT</a></li>
+                <li><a href="Dogs Page.html ">DOGS</a></li>
+                <li><a href="inquiry-1.html">INQUIRY</a></li> 
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="main-2">
+        <br>
+        <div id="box-1">
+         <img src="logo.JPG">
+         <h1>About Us:</h1>
+         <div class="text">
+         <p>The "Tails n' Woofs" was started on January 31, 2022.The name "Tails n' Woofs" is derived from a dog tail because the owner is furparent and an office worker.Tails n' Woofs features some different kinds of dog breed and sell some puppies as well when its breeding season. Tails n' Woofs is also have certificate approved by PCCI (Philippine Canine club) and FCI (Federation Cynologique Internationale).</p>
+        </div>
+        </div>
+    </div>
+    <div class="main-3">
+        <br>
+        <br>
+        <br>
+        <div id="box-2">
+         <img src="Cert1.jpg">
+         <img src="Cert2.jpg">
+        </div>
+        </div>
+    </div>
+
+    <hr>
+    <div id="footer">
+        <img src="bg.jpg">
+        </div>
+</body>
+</html>
